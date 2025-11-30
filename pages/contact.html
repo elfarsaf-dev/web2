@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ELFAR.DEV</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="matrix-bg">
+        <canvas id="matrixCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="bracket">&lt;</span>
+                <span class="logo-text">ELFAR.DEV</span>
+                <span class="bracket">/&gt;</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" style="margin-top: 80px;">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">//</span> Get In Touch
+            </h2>
+
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h3 class="contact-subtitle">Send me a message</h3>
+                    <p class="form-info">💡 Isi form di bawah, kemudian klik tombol "Send Message". Pesan Anda akan langsung dikirim ke email saya atau hubungi saya via WhatsApp untuk respon lebih cepat.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project discussion" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h3 class="contact-subtitle">Contact Information</h3>
+
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:elfardev@elfar.my.id">elfardev@elfar.my.id</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/6283817779643" target="_blank" rel="noopener">+6283817779643</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Karanganyar, Jawa Tengah</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/elfar.dev" class="social-link" title="Instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://facebook.com/saf.elfar.3" class="social-link" title="Facebook" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="mailto:elfardev@elfar.my.id" class="social-link" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="response-time">
+                        <div class="response-status">
+                            <span class="status-dot"></span>
+                            <p>Typically responds within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="quick-contact-section">
+                <h3 class="section-subtitle">Quick Links</h3>
+                <div class="quick-links-grid">
+                    <a href="mailto:elfardev@elfar.my.id" class="quick-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send Email</span>
+                    </a>
+                    <a href="https://instagram.com/elfar.dev" class="quick-link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://facebook.com/saf.elfar.3" class="quick-link" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="quick-link">
+                        <i class="fas fa-file-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&lt; Built with passion by <span class="highlight">ELFAR.DEV</span> /&gt;</p>
+        <p class="footer-text">© 2024 All rights reserved. Keep coding, keep hacking, keep learning.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // EmailJS Configuration
+        const EMAILJS_CONFIG = {
+            serviceID: 'service_lrqzela',
+            templateID: 'template_c4ae72s',
+            publicKey: 'Wwaodivjubxmnzs01'
+        };
+
+        // Initialize EmailJS
+        (function() {
+            emailjs.init(EMAILJS_CONFIG.publicKey);
+        })();
+
+        // Form Submission with EmailJS
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Show sending state
+            submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+            submitBtn.disabled = true;
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Send email using EmailJS
+            emailjs.send(EMAILJS_CONFIG.serviceID, EMAILJS_CONFIG.templateID, formData)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    submitBtn.innerHTML = '<span>Message Sent!</span><i class="fas fa-check"></i>';
+                    
+                    // Reset form after 2 seconds
+                    setTimeout(() => {
+                        document.getElementById('contactForm').reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 2000);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    submitBtn.innerHTML = '<span>Failed to Send</span><i class="fas fa-times"></i>';
+                    
+                    // Show error message
+                    alert('Maaf, terjadi kesalahan saat mengirim pesan. Silakan coba lagi atau hubungi via WhatsApp.');
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                });
+        });
+    </script>
+</body>
+</html>

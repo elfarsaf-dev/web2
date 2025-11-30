@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | ELFAR.DEV</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="matrix-bg">
+        <canvas id="matrixCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="bracket">&lt;</span>
+                <span class="logo-text">ELFAR.DEV</span>
+                <span class="bracket">/&gt;</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" style="margin-top: 80px;">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">//</span> Featured Projects
+            </h2>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="security">
+                    <div class="project-header">
+                        <h3>Cyber Security Scanner</h3>
+                        <span class="project-tag">Security</span>
+                    </div>
+                    <p>Advanced vulnerability scanner with real-time threat detection and reporting dashboard. Supports multiple scanning profiles and automated remediation suggestions.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 1.2K</span>
+                        <span><i class="fas fa-code-branch"></i> 89</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <h3>AI Chat Platform</h3>
+                        <span class="project-tag">Web</span>
+                    </div>
+                    <p>Real-time chat application with AI-powered responses and advanced encryption protocols. Features message encryption, user authentication, and admin dashboard.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>WebSocket</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 856</span>
+                        <span><i class="fas fa-code-branch"></i> 45</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <div class="project-header">
+                        <h3>Blockchain Wallet</h3>
+                        <span class="project-tag">Security</span>
+                    </div>
+                    <p>Secure cryptocurrency wallet with multi-signature support and cold storage integration. Advanced transaction monitoring and portfolio analytics included.</p>
+                    <div class="project-tech">
+                        <span>Solidity</span>
+                        <span>Web3.js</span>
+                        <span>Ethereum</span>
+                    </div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 2.1K</span>
+                        <span><i class="fas fa-code-branch"></i> 234</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="devops">
+                    <div class="project-header">
+                        <h3>Cloud Infrastructure</h3>
+                        <span class="project-tag">DevOps</span>
+                    </div>
+                    <p>Automated deployment pipeline with Docker, Kubernetes, and comprehensive monitoring. Includes auto-scaling, load balancing, and disaster recovery setup.</p>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 934</span>
+                        <span><i class="fas fa-code-branch"></i> 156</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="backend">
+                    <div class="project-header">
+                        <h3>Database Optimizer</h3>
+                        <span class="project-tag">Backend</span>
+                    </div>
+                    <p>Performance optimization tool for large-scale databases with query analysis and caching strategies. Real-time monitoring and automated index recommendations.</p>
+                    <div class="project-tech">
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                        <span>Go</span>
+                    </div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 567</span>
+                        <span><i class="fas fa-code-branch"></i> 78</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card" data-category="backend">
+                    <div class="project-header">
+                        <h3>API Gateway</h3>
+                        <span class="project-tag">Backend</span>
+                    </div>
+                    <p>High-performance API gateway with rate limiting, authentication, and load balancing. GraphQL support with advanced caching and request optimization.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Nginx</span>
+                        <span>GraphQL</span>
+                    </div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 1.8K</span>
+                        <span><i class="fas fa-code-branch"></i> 203</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&lt; Built with passion by <span class="highlight">ELFAR.DEV</span> /&gt;</p>
+        <p class="footer-text">© 2024 All rights reserved. Keep coding, keep hacking, keep learning.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Project Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.dataset.filter;
+                
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                document.querySelectorAll('.project-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
