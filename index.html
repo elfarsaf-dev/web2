@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELFAR.DEV | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="matrix-bg">
+        <canvas id="matrixCanvas"></canvas>
+        <div id="fireParticles" class="fire-particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="bracket">&lt;</span>
+                <span class="logo-text">ELFAR.DEV</span>
+                <span class="bracket">/&gt;</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="pages/projects.html" class="nav-link">Projects</a>
+                <a href="pages/skills.html" class="nav-link">Skills</a>
+                <a href="pages/about.html" class="nav-link">About</a>
+                <a href="pages/contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="terminal-header">
+                <span class="terminal-btn red"></span>
+                <span class="terminal-btn yellow"></span>
+                <span class="terminal-btn green"></span>
+            </div>
+            <div class="terminal-content">
+                <p class="typing">$ whoami</p>
+                <p class="terminal-text">ELFAR.DEV - <span class="highlight">Full Stack Developer</span> & <span class="highlight">Cybersecurity</span> Enthusiast</p>
+                <p class="terminal-text">Building elegant code, breaking security barriers</p>
+                <p class="typing-cursor">root@elfar:~# <span class="cursor"></span></p>
+                <button class="terminal-btn-execute" id="executeBtn" title="Execute">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="terminal-output" id="terminalOutput"></div>
+            </div>
+        </div>
+        <div class="floating-code">
+            <code>&lt;/&gt;</code>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">//</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-line">
+                        <span class="code-keyword">const</span> developer = {
+                    </p>
+                    <p class="about-line indent-1">
+                        <span class="code-keyword">name</span>: <span class="code-string">"Creative Developer"</span>,
+                    </p>
+                    <p class="about-line indent-1">
+                        <span class="code-keyword">passion</span>: <span class="code-string">"Building Incredible Web Experiences"</span>,
+                    </p>
+                    <p class="about-line indent-1">
+                        <span class="code-keyword">experience</span>: <span class="code-number">5+</span> years,
+                    </p>
+                    <p class="about-line indent-1">
+                        <span class="code-keyword">expertise</span>: [<span class="code-string">"Web Dev"</span>, <span class="code-string">"Security"</span>, <span class="code-string">"Cloud"</span>]
+                    </p>
+                    <p class="about-line">}</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>40+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Commitment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">//</span> Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Cyber Security Scanner</h3>
+                        <span class="project-tag">Security</span>
+                    </div>
+                    <p>Advanced vulnerability scanner with real-time threat detection and reporting dashboard.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>AI Chat Platform</h3>
+                        <span class="project-tag">AI/ML</span>
+                    </div>
+                    <p>Real-time chat application with AI-powered responses and advanced encryption protocols.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>WebSocket</span>
+                        <span>AI/ML</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Blockchain Wallet</h3>
+                        <span class="project-tag">Blockchain</span>
+                    </div>
+                    <p>Secure cryptocurrency wallet with multi-signature support and cold storage integration.</p>
+                    <div class="project-tech">
+                        <span>Solidity</span>
+                        <span>Web3.js</span>
+                        <span>Ethereum</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Cloud Infrastructure</h3>
+                        <span class="project-tag">DevOps</span>
+                    </div>
+                    <p>Automated deployment pipeline with Docker, Kubernetes, and comprehensive monitoring.</p>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>AWS</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Database Optimizer</h3>
+                        <span class="project-tag">Backend</span>
+                    </div>
+                    <p>Performance optimization tool for large-scale databases with query analysis and caching.</p>
+                    <div class="project-tech">
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                        <span>Go</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>API Gateway</h3>
+                        <span class="project-tag">Backend</span>
+                    </div>
+                    <p>High-performance API gateway with rate limiting, authentication, and load balancing.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Nginx</span>
+                        <span>GraphQL</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">//</span> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Vue.js</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">Tailwind CSS</div>
+                        <div class="skill-item">WebGL</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Go</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">MongoDB</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Security</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Cryptography</div>
+                        <div class="skill-item">Penetration Testing</div>
+                        <div class="skill-item">OAuth/JWT</div>
+                        <div class="skill-item">OWASP</div>
+                        <div class="skill-item">Web Security</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Kubernetes</div>
+                        <div class="skill-item">AWS/GCP</div>
+                        <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">Jenkins</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">//</span> Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        Got an interesting project? Want to collaborate? Let's create something amazing together!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:elfardev@elfar.my.id" class="contact-link">
+                            <i class="fas fa-envelope"></i> elfardev@elfar.my.id
+                        </a>
+                        <a href="https://instagram.com/elfar.dev" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i> @elfar.dev
+                        </a>
+                        <a href="https://facebook.com/saf.elfar.3" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i> saf.elfar.3
+                        </a>
+                        <a href="https://wa.me/6283817779643" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> +6283817779643
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&lt; Built with passion by <span class="highlight">ELFAR.DEV</span> /&gt;</p>
+        <p class="footer-text">© 2024 All rights reserved. Keep coding, keep hacking, keep learning.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
